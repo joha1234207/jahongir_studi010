@@ -1,0 +1,334 @@
+body {
+	background: linear-gradient(180deg, #0f1020, #17182f);
+	margin: 0;
+	overflow: hidden;
+}
+
+/* ---------- TEXT ---------- */
+
+.sarlavha-h1 {
+	font-size: 1.9rem;
+	color: #f1f5f9;
+	text-shadow: 0 0 25px #8b5cf6;
+}
+
+.sarlavha-h2 {
+	color: #f1f5f9;
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+.paragraf {
+	color: #f1f5f9;
+	font-size: 1.2rem;
+}
+
+/* ---------- HEADER ---------- */
+
+.header-menyu {
+	background: #17182f;
+	position: fixed;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	width: 90vw;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 15px #8b5cf6;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	z-index: 10;
+}
+
+/* ---------- NAV ---------- */
+
+.nav-menyu {
+	width: 90vw;
+	height: 70px;
+	position: fixed;
+	background: #17182f;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	box-shadow: 0 0 15px #8b5cf6;
+	z-index: 9;
+	display: flex;
+	align-items: center;
+}
+
+.nav-menyu nav,
+.nav-menyu nav ul {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.nav-menyu nav ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav-menyu nav ul li {
+	list-style: none;
+	border-radius: 20px;
+	border: 1px solid #8b5cf6;
+	width: 20%;
+	transition: 0.3s ease;
+}
+
+.nav-btn {
+	width: 100%;
+	padding: 0.4rem;
+	background: none;
+	border: none;
+	font-size: 1.2rem;
+	color: #94a3b8;
+	transition: 0.3s ease;
+	cursor: pointer;
+}
+
+.nav-menyu nav ul li:hover {
+	background: #94a3b8;
+	transform: scale(1.05);
+}
+
+.nav-btn:hover {
+	color: #0f1020;
+}
+
+.nav-btn:active {
+	transform: scale(0.95);
+}
+
+/* ---------- CAROUSEL ---------- */
+
+.carusel {
+	overflow: hidden;
+	width: 100vw;
+}
+
+.container {
+	display: flex;
+	width: 300vw;
+	transition: transform 0.4s ease;
+}
+
+.viewport {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+/* ---------- SCROLL FIX ---------- */
+
+.items {
+	width: 100%;
+	height: calc(100vh - 140px);
+	margin-top: 70px;
+	margin-bottom: 70px;
+	overflow-y: auto;
+}
+
+/* ---------- MAQOLA ---------- */
+
+.maqola-quti {
+	padding: 0.5rem;
+	border-radius: 20px;
+	box-shadow: 0 0 25px #8b5cf6;
+	margin: 6rem auto;
+	width: 70%;
+}
+
+.maqola-matni {
+	line-height: 40px;
+}
+
+.sana {
+	color: #94a3b8;
+	font-size: 1rem;
+	display: block;
+	text-align: end;
+	line-height: 20px;
+	padding-top: 0.5rem;
+	width: 100%;
+	border-top: 2px solid #cbd6e1;
+}
+
+/* ---------- LIRIKA ---------- */
+
+#lirika {
+	scroll-snap-type: y mandatory;
+}
+
+.slide {
+	width: 90%;
+	height: calc(100vh - 140px);
+	scroll-snap-align: start;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.about-audio {
+	width: 100%;
+	background: #17182f;
+	padding: 1rem;
+	border-radius: 20px;
+	box-shadow: 0 0 15px #8b5cf6;
+	display: grid;
+	gap: 2rem;
+}
+
+/* ---------- AUDIO ---------- */
+
+.control-container {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.progress-container {
+	width: 100%;
+	height: 8px;
+	background: #2a2b45;
+	border-radius: 14px;
+	cursor: pointer;
+	position: relative;
+}
+
+.progress {
+	height: 100%;
+	width: 0%;
+	background: #8b5cf6;
+	border-radius: 14px;
+}
+
+.time {
+	display: flex;
+	font-size: 1rem;
+	color: #94a3b8;
+}
+
+.play-btn {
+	width: 100px;
+	height: 50px;
+	background: linear-gradient(45deg, #8b5cf6, #a78bfa);
+	color: white;
+	border: none;
+	border-radius: 14px;
+	transition: 0.3s ease;
+	cursor: pointer;
+}
+
+.play-btn:hover {
+	transform: scale(1.05);
+}
+
+.play-btn:active {
+	transform: scale(0.95);
+}
+
+@media (max-width: 700px) {
+	.sarlavha-h1 {
+		font-size: 1.8rem;
+		text-shadow: 0 0 15px #8b5cf6;
+	}
+	
+	.sarlavha-h2 {
+		font-size: 1.5rem;
+	}
+	
+	.header-menyu, .nav-menyu {
+		width: 100vw;
+	}
+		
+	.nav-btn {
+		padding: 0.5rem;
+		font-size: 1.3rem;
+	}
+	
+	.maqola-quti {
+		padding: 0.5rem;
+		box-shadow: 0 0 15px #8b5cf6;
+		margin: 8rem auto;
+		width: 80%;
+		
+	}
+	
+	.maqola-matni {
+		line-height: 40px;
+	}
+	
+	.sana {
+		font-size: 0.9rem;
+	}
+	#lirika {
+		scroll-snap-type: y mandatory;
+	}
+	
+	.about-audio {
+		height: 50vh;
+	}
+}
+
+@media (max-width: 400px) {
+	.sarlavha-h1 {
+		font-size: 1.3rem;
+	}
+	
+	.sarlavha-h2 {
+		font-size: 1rem;
+	}
+	
+	.paragraf {
+		color: #f1f5f9;
+	}
+
+	
+	.nav-menyu nav ul li {
+		width: 30%;
+	}
+	
+	.nav-btn {
+		padding: 0.5rem 0.3rem;
+		font-size: 0.9rem;
+	}
+
+	.maqola-quti {
+		width: 90%;
+		
+	}
+	
+	.maqola-matni {
+		line-height: 40px;
+	}
+	
+	.sana {
+		font-size: 0.7rem;
+		border-top: 1px solid #cbd6e1;
+	}
+	
+	.about-audio {
+		height: auto;
+	}
+	
+	.control-container {
+		display: grid;
+	}
+	
+	.time {
+		font-size: 0.7rem;
+	}
+	
+	.play-btn {
+		width: 75px;
+		height: 35px;
+		font-size: 1rem;
+		margin: auto auto 1rem;
+	}
+}
