@@ -327,7 +327,7 @@ body {
 	}
 	
 	.time {
-		font-size: 0.7rem;
+		font-size: 1rem;
 	}
 	
 	/*.play-btn {
@@ -336,4 +336,5 @@ body {
 		font-size: 1rem;
 		margin: auto auto 1rem;
 	}*/
+
 }
