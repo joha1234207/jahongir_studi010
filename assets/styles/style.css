@@ -214,22 +214,23 @@ body {
 	color: #94a3b8;
 }
 
-.play-btn {
-	width: 100px;
-	height: 50px;
+.download, .play-btn {
+	text-decoration: none;
+	text-align: center;
+	font-size: 0.7rem;
 	background: linear-gradient(45deg, #8b5cf6, #a78bfa);
+	padding: 1rem 1.3rem;
 	color: white;
-	border: none;
-	border-radius: 14px;
 	transition: 0.3s ease;
-	cursor: pointer;
+	border-radius: 14px;
+	border: none;
 }
 
-.play-btn:hover {
+.play-btn:hover, .download:hover {
 	transform: scale(1.05);
 }
 
-.play-btn:active {
+.play-btn:active, .download:active {
 	transform: scale(0.95);
 }
 
@@ -321,14 +322,18 @@ body {
 		display: grid;
 	}
 	
+	.progress-container {
+		margin-top: 1rem;	
+	}
+	
 	.time {
 		font-size: 0.7rem;
 	}
 	
-	.play-btn {
+	/*.play-btn {
 		width: 75px;
 		height: 35px;
 		font-size: 1rem;
 		margin: auto auto 1rem;
-	}
+	}*/
 }
