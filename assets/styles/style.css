@@ -217,7 +217,7 @@ body {
 .download, .play-btn {
 	text-decoration: none;
 	text-align: center;
-	font-size: 0.7rem;
+	font-size: 1rem;
 	background: linear-gradient(45deg, #8b5cf6, #a78bfa);
 	padding: 1rem 1.3rem;
 	color: white;
@@ -327,7 +327,7 @@ body {
 	}
 	
 	.time {
-		font-size: 1rem;
+		font-size: 0.7rem;
 	}
 	
 	/*.play-btn {
@@ -338,3 +338,4 @@ body {
 	}*/
 
 }
+
