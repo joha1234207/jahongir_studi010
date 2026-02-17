@@ -55,7 +55,7 @@ async function loadLiriks() {
                         <h2 class="sarlavha-h2">${l.author}</h2>
                         <div class="control-container">
                             <button class="play-btn">Play</button>
-                            <a href="${l.href}" class="download" download>Skachat</a>
+                            <a href="assets/liriks/${l.href}" class="download" download>Skachat</a>
                             <div class="progress-container">
                                 <div class="progress"></div>
                             </div>
